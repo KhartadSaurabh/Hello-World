@@ -65,7 +65,3 @@ print(New_Merge)
 
 # Alternate condition using Lambda
 New_Merge['Amount'].apply(lambda x: 'Low' if x <10000 else 'Medium' if x <50000 else 'High' if x <75000 else 'Very High')
-
-
-#to delete a column 
-New_Merge.drop(columns=[['Col1','Col2']],axis=1,inplace=True)
