@@ -61,7 +61,7 @@ def assign_bucket(Amount):
 New_Merge['AmountBucket'] = New_Merge['Amount'].apply(assign_bucket)
 print(New_Merge)
 
-# New_Merge.drop(columns = 'Address', axis=1, inplace = 'True')
+
 
 # Alternate condition using Lambda
 New_Merge['Amount'].apply(lambda x: 'Low' if x <10000 else 'Medium' if x <50000 else 'High' if x <75000 else 'Very High')
